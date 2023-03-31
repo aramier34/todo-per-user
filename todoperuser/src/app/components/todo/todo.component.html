@@ -1,0 +1,11 @@
+<h1>Liste des tâches</h1>
+
+<button (click)="createOne()">Créer une nouvelle tâche</button>
+
+<ul>
+  <li *ngFor="let todo of todos" [class.done]="todo.done">
+    {{ todo.content }}
+    <button (click)="deleteOne(todo.id)">Supprimer</button>
+    <button (click)="updateOne(todo)">Editer</button>
+  </li>
+</ul>

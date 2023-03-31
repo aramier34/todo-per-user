@@ -1,0 +1,27 @@
+
+GET http://localhost:4200/todos
+###
+
+GET http://localhost:4200/todos/2f91a38e-c267-4b4d-ae0b-1e07b475abed
+
+###
+
+DELETE http://localhost:4200/todos/3ace406e-4a32-4057-87b8-f7c4323c44e1
+
+###
+
+POST http://localhost:4200/todos
+Content-Type: application/json
+
+{
+  "content": "Aller au cinéma"
+}
+
+###
+
+PUT http://localhost:4200/todos/2f91a38e-c267-4b4d-ae0b-1e07b475abed
+Content-Type: application/json
+
+{
+  "content": "Faire le grand ménage"
+}
